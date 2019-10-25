@@ -1,10 +1,24 @@
 import React from 'react';
-import { Button } from 'antd'
+import Header from './components/Header';
+import Index from './page/index'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import './App.less';
 
 function App() {
   return (
     <div className="App">
-      <Button type='primary'>111</Button>
+      <Header className="header"></Header>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Index />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
