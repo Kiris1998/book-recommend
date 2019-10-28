@@ -1,0 +1,73 @@
+.like {
+  display: flex;
+  align-items: center;
+  .like-title {
+    font-size: 10px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .fave-container {
+    position: relative;
+  }
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  .recommend {
+    width: 25%;
+    padding: 20px 20px 80px;
+    border: solid 1px gainsboro;
+    border-radius: 8px;
+    .recommend-title {
+      font-size: 25px;
+      font-weight: 300;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    .ant-btn-link {
+      margin-left: 10px;
+      display: block;
+    }
+  }
+  .detail {
+    width: 70%;
+    padding: 20px 20px 80px;
+    border: solid 1px gainsboro;
+    border-radius: 8px;
+    .book-name {
+      font-size: 25px;
+      font-weight: 300;
+      margin-left: 20px;
+    }
+    .main-area {
+      display: flex;
+      padding-top: 20px;
+      .book-img {
+        width: 200px;
+        margin: 0 20px 0 40px;
+      }
+      .info {
+        .author-title, .tag-title, .publish-title, .summary-title, .num-title, .operation-title {
+          font-size: 15px;
+          font-weight: 500;
+        }
+        > div {
+          margin-bottom: 15px;
+        }
+        .summary-wrapper {
+          display: flex;
+          .summary {
+            word-break: normal; 
+            width: 300px; 
+            display: block; 
+            white-space: pre-wrap;
+            word-wrap : break-word;
+            text-align: justify;
+          }
+        }
+        
+      }
+    }
+    
+  }
+}
